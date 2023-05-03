@@ -1,8 +1,7 @@
-# Topic: Build out Gmail's Email Address Tag Input Component in React
+# Topic: Learn how to work with user location data in React
 
 ## Objectives:
 
-- Implement a form input that listens for the return key
-- Create an input handler that listens for clipboard paste events
-- Build a state engine that can store an array of tags
-- Allow users to click to remove tags
+- Build out a component that uses the browser's location engine to request user coordinates
+- Run geo queries to calculate the user's distance from an address
+- Model a list of locations that dynamically sorts based on the user's proximity
