@@ -1,7 +1,6 @@
 import * as React from "react";
 import Layout from "./Layout";
 import { LocationData, LocationList } from "./LocationList";
-import { LocationProvider } from "./LocationProvider";
 
 const sampleLocations: LocationData[] = [
   {
@@ -24,13 +23,10 @@ const sampleLocations: LocationData[] = [
 export default function Home() {
   return (
     <Layout>
-      {" "}
-      <LocationProvider>
-        <div>
-          <h1>Nearest Locations</h1>
-          <LocationList locations={sampleLocations} />
-        </div>
-      </LocationProvider>
+      <div>
+        <h1>Nearest Locations</h1>
+        <LocationList locations={sampleLocations} />
+      </div>
     </Layout>
   );
 }
